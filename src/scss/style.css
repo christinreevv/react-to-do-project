@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", serif;
+}
+
+body, html {
+  background-color: rgb(207, 139, 139);
+}
+
+.main {
+  text-align: center;
+  margin: 10vh 20vw 0 20vw;
+}
+
+input {
+  width: 30vw;
+  padding: 15px 20px 15px 20px;
+  font-size: 15px;
+  border-radius: 7px;
+  border: 1px solid red;
+}
+
+.deleteButton, .addButton {
+  margin-left: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.newTask {
+  padding-top: 20px;
+}
+
+.addedTask {
+  text-align: left;
+}
+
+.inputCheck {
+  width: 30px;
+}
+
+.addButton {
+  font-size: 15px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+li {
+  padding-top: 30px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+/* Основной стиль для контейнера задач */
+.addTask {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Стили для каждой задачи */
+.addTask li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Эффект при наведении на задачу */
+.addTask li:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для чекбокса */
+.inputCheck {
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.inputCheck:checked {
+  transform: scale(1.2);
+}
+
+/* Стили для текста задачи */
+.addedTask {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addedTask:hover {
+  color: #007bff;
+}
+
+/* Когда задача завершена - зачеркивание и изменение цвета */
+.addedTask.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+/* Стили для кнопки удаления */
+button {
+  margin-left: 20px;
+  padding: 8px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Стили для редактирования задачи */
+input[type=text] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Стили для активного ввода текста (когда редактирование активно) */
+input[type=text]:focus {
+  border: 1px solid #007bff;
+}
+
+/* Добавление отступа слева для кнопки удаления */
+button {
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */
